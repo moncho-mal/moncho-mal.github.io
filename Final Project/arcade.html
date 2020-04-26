@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- main a-frame library -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+
+    <!-- physics library -->
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <!-- particle system library -->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+    <!-- environment library -->
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+    <!-- text geometry library -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
+    <!-- extras library -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+
+    <script src="a-frame-href.js"></script>
+    <script src="index.html"></script>
+  </head>
+  <body>
+
+  <a-scene cursor="rayOrigin:mouse">
+  <a-scene loading-screen="dotsColor: white; backgroundColor: black"></a-scene>
+  <a-sky color="#081a2a"></a-sky>
+<a-scene>
+    <a-scene>
+<a-assets>
+    <a-asset-item id="font" src="https://raw.githubusercontent.com/moncho-mal/moncho-mal.github.io/master/Final%20Project/Arcadefont.json"></a-asset-item>
+</a-assets>
+
+<a-entity
+    text-geometry="value: Place;
+    font: https://raw.githubusercontent.com/moncho-mal/moncho-mal.github.io/master/Final%20Project/Arcadefont.json;
+    height: 0;
+    size: 0.58"
+    material= "color:#FFFFFF"
+    position="-4.59 4.78 -7.08"
+></a-entity>
+  </a-scene>
+
+<a-entity
+    text-geometry="value: Arcade;
+    font: https://raw.githubusercontent.com/moncho-mal/moncho-mal.github.io/master/Final%20Project/Arcadefont.json;
+    height: 0;
+    size: 0.58"
+    material= "color:#FF001A"
+    position="-5.38 3.9 -7.08"
+></a-entity>
+  </a-scene>
+
+
+  <a-assets>
+    <audio src="qbertsound.mp3" autoplay
+      preload></audio>
+  </a-assets>
+
+<a-assets><img
+    id="carpet2"
+    src="carpet2.png"
+></a-assets>
+
+<a-plane
+  src="#carpet2"
+  height="20"
+  width="20"
+  rotation="-90 0 0"
+></a-plane>
+
+<a-models
+  id="arcade"
+  src="models/scene.gltf"
+></a-models>
+
+<a-entity
+  gltf-model="#arcade"
+  scale=".02 .02 .02"
+  position=".3 1.45 -3.0"
+  rotation= "0 40 0"
+  sound="src:coin.mp3; on: click"
+  href="qboard.html"
+  ></a-entity>
+
+<a-models
+  id="arcade1"
+  src=models/atari_quantum_arcade/scene.gltf
+></a-models>
+
+<a-entity
+  gltf-model="#arcade1"
+  scale="1.1 1.1 1.1"
+  position="-.49 1.09 -4.03"
+  rotation= "0 220 0"
+  sound="src:coin.mp3; on: click"
+  href="snake.html"
+  ></a-entity>
+
+  <a-entity
+    gltf-model="#arcade1"
+    scale="1.1 1.1 1.1"
+    position="1.590 1.09 -2.000"
+    rotation= "0 220 0"
+    sound="src:coin.mp3; on: click"
+    href="Userinput/index.html"
+    ></a-entity>
+
+    <a-entity
+      gltf-model="#arcade1"
+      scale="1.1 1.1 1.1"
+      position="0.910 1.09 -2.660"
+      rotation= "0 220 0"
+      sound="src:coin.mp3; on: click"
+
+      ></a-entity>

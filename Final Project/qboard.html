@@ -1,0 +1,336 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- main a-frame library -->
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+
+    <!-- physics library -->
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+    <!-- particle system library -->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+    <!-- environment library -->
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+    <!-- text geometry library -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
+    <!-- extras library -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+
+    <script src="a-frame-href.js"></script>
+
+  </head>
+  <body>
+    <a-assets>
+      <audio src="tune.mp3" autoplay
+        preload></audio>
+    </a-assets>
+
+    <a-scene cursor="rayOrigin:mouse">
+    <a-sky color="#000000"></a-sky>
+
+<a-assets>
+  <img id="qboard1"
+  src="qboard1.png">
+</a-assets>
+
+
+
+<a-image
+src="#qboard1"
+material="color: #fefefe"
+geometry=""
+position="4.69 4.83 -10.18"
+scale="6 6 6"></a-image>
+
+<a-assets>
+  <img id="qboard2"
+  src="qboard2.png">
+</a-assets>
+
+<a-image
+src="#qboard2"
+material="color: #fefefe"
+geometry=""
+position="-4.8 3.8 -10.18"
+scale="5 5 5"></a-image>
+
+<a-assets>
+  <img id="qbertfig"
+  src="qbertfig.png">
+</a-assets>
+
+<a-image src="#qbertfig"
+material="color: #fefefe"
+geometry=""
+position="-0.80423 2.0369 -9.36"
+scale="1.5 1.5 1.5"></a-image>
+
+<a-assets>
+  <img id="qblurt"
+  src="qblurt.png">
+</a-assets>
+
+<a-image
+src="#qblurt"
+material="color: #fefefe"
+geometry=""
+position="-0.92159 3.30058 -9.36"
+scale="3 1.5 1"></a-image>
+
+
+
+
+      <a-entity
+      <!-- camera="active: true" -->
+      look-controls wasd-controls position="0 5 5"
+      data-aframe-default-camera position
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  7;  width: 1"
+        position="0  -1 -10;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+
+
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  6;  width: 1"
+        position="-0.704  -1.5 -9.295;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        href="https://archive.org/details/arcade_qbert"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+        animation__mouseleave="property: components.material.material.color; type: color; to: red; startEvents: mouseleave; dur: 100";
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  6;  width: 1"
+        position="0.704 -1.5 -9.295;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  5;  width: 1"
+        position="0.009 -2 -8.603;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  5;  width: 1"
+        position="1.399 -2 -8.603;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  5;  width: 1"
+        position="-1.382 -2 -8.603;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+      ></a-entity>
+
+
+      <a-entity
+        geometry="depth:  1;  height:  4;  width: 1"
+        position="-0.687 -2.5 -7.907;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  4;  width: 1"
+        position="-2.077 -2.5 -7.907;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  4;  width: 1"
+        position="0.704 -2.5 -7.907;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+      ></a-entity>
+
+      <a-entity
+        geometry="depth:  1;  height:  4;  width: 1"
+        position="2.095 -2.5 -7.907;"
+        rotation= "0 45 0;"
+        material="color:#f37e3b;"
+        animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+      ></a-entity>
+
+      <a-entity
+    geometry="depth: 1; height: 3; width:1"
+    position="2.78816 -3 -7.21352"
+    rotation="0 45 0"
+    material="color: #f37e3b"
+    animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+    ></a-entity>
+
+      <a-entity
+     geometry="depth: 1; height: 3; width:1"
+     position="1.40183 -3 -7.21352"
+     rotation="0 45 0"
+     material="color: #f37e3b"
+     animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+     ></a-entity>
+
+
+      <a-entity
+     geometry="depth: 1; height: 3; width:1"
+     position="0.016 -3 -7.21352"
+     rotation="0 45 0"
+     material="color: #f37e3b"
+     animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+    ></a-entity>
+
+        <a-entity
+      geometry="depth: 1; height: 3; width:1"
+      position="-1.37081 -3 -7.21352"
+      rotation="0 45 0"
+      material="color: #f37e3b"
+      animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+       ></a-entity>
+
+      <a-entity
+    geometry="depth: 1; height: 3; width:1"
+    position="-2.78486 -3 -7.21352"
+    rotation="0 45 0"
+    material="color: #f37e3b"
+    animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+    ></a-entity>
+
+    <a-entity
+  geometry="depth: 1; height: 2; width:1"
+  position="3.503 -3.5 -6.525"
+  rotation="0 45 0"
+  material="color: #f37e3b"
+  animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+  ></a-entity>
+
+  <a-entity
+geometry="depth: 1; height: 2; width:1"
+position="2.067 -3.5 -6.525"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 2; width:1"
+position="0.692 -3.5 -6.525"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 2; width:1"
+position="-0.683 -3.5 -6.525"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 2; width:1"
+position="-2.053 -3.5 -6.525"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 2; width:1"
+position="-3.478 -3.5 -6.525"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 1; width:1"
+position="4.174 -4 -5.832"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 1; width:1"
+position="2.788 -4 -5.832"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 1; width:1"
+position="1.374 -4 -5.804"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 1; width:1"
+position="-0.012 -4 -5.832"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 1; width:1"
+position="-1.371 -4 -5.804"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 1; width:1"
+position="-2.757 -4 -5.832"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+<a-entity
+geometry="depth: 1; height: 1; width:1"
+position="-4.171 -4 -5.804"
+rotation="0 45 0"
+material="color: #f37e3b"
+animation__mouseenter="property: components.material.material.color; type: color; to: gold; startEvents: mouseenter; dur:100 ";
+></a-entity>
+
+</a-scene>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
